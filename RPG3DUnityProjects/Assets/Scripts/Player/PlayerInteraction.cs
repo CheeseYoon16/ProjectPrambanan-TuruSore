@@ -99,6 +99,7 @@ public class PlayerInteraction : MonoBehaviour
 
             if (currentInteractable != null && Input.GetKeyDown(KeyCode.E)) //If there is object to interact, then i can interact
             {
+                SoundManager.Instance.PlaySound(SoundType.INTERACTION, "Interact");
                 Interact();
             }
         }
